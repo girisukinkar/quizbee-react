@@ -26,9 +26,7 @@ class QuizBee extends Component{
         quizService().then(question =>{
             this.setState({
                 questionBank:question
-            });
-
-            
+            });           
         });
     };
 
