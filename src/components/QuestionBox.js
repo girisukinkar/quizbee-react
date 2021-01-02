@@ -1,5 +1,4 @@
 //Set of buttons for user to pick an option
-
 import React, {  useState } from 'react';
 const QuestionBox = ({question,options,selected}) => {
     const [answer, setAnswer] = useState(options);
@@ -8,7 +7,7 @@ const QuestionBox = ({question,options,selected}) => {
             <div className="question">{question}</div>
             {
             answer.map((text,index) => (
-                <button key={index} className="answerBtn" onClick={() => {
+                <button key={index} className="answerBtn"  onClick={() => {
                     setAnswer([text]);
                     selected(text);
                 }}>{text}</button>
